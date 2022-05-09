@@ -33,12 +33,14 @@
 
 ## Backend
 * Da pasta ```root``` do projeto rode ```cd back```
+* Rode o comando ```npm install```
 * Rode o comando ```npm run server``` para iniciar o backend.
 
 <div id="front"></div>
 
 ## Frontend
 * Da pasta ```root``` do projeto rode ```cd front```
+* Rode o comando ```npm install```
 * Rode o comando ```npm start``` para iniciar o front.
 * O navegador abrirá automaticamente na url ```http://localhost:3000``` onde a página estará disponível.
 
