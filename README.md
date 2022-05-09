@@ -1,3 +1,5 @@
+<div id="top"></div>
+
 # Sobre o desafio
 
 * Desenvolver um quadro kanban com as colunas "To Do", "Doing" e "Done" onde pudesse ser feito adição, remoção e alteração de tarefas e alteração de status das tarefas já adicionadas. 
@@ -23,7 +25,9 @@
 
 ## Requisitos Não Funcionais
 
-* <a href="#nfr">Requisitos Não Funcionais</a>
+* <a href="#column">Colunas</a>
+* <a href="#counter">Contador</a>
+* <a href="#markdown">Markdown</a>
 
 ## Tecnologias utilizadas
 
@@ -120,11 +124,11 @@ CARD EDITÁVEL:
 
 ![image](https://user-images.githubusercontent.com/67290959/167442205-b9877368-b8be-4414-a8f0-3d52daf02ad9.png)
 
-<div id="nfr"></div>
-
 -----------------------------------------------------------------------------------
 
 # Funcionalidades - REQUISITOS NÃO FUNCIONAIS
+
+<div id="column"></div>
 
 ## Cada uma das colunas poderá ser recolhida caso seja clicado em qualquer lugar do header da mesma:
 
@@ -136,6 +140,8 @@ COLUNA RECOLHIDA:
 
 ![image](https://user-images.githubusercontent.com/67290959/167444130-30d0c603-a560-4ba3-8528-6f06edfa70b5.png)
 
+<div id="counter"></div>
+
 ## Contador de tarefas
 
 * Automaticamente ao adicionar, remover ou alterar o status de uma tarefa existe um contador para saber o número de tarefas em cada uma das colunas:
@@ -143,6 +149,8 @@ COLUNA RECOLHIDA:
 COLUNAS:
 
 ![image](https://user-images.githubusercontent.com/67290959/167444603-f89f1987-f317-4995-b8f4-0d18604b65a2.png)
+
+<div id="markdown"></div>
 
 ## Markdown
 
@@ -173,4 +181,9 @@ setInterval(() => {console.log("oi lets code"}, 5000)
     * Context
 * Node Js
     * Express
+
+-----------------------------------------------------------------------------------
+
+* <a href="#top">Voltar ao topo da página</a>
+
 
