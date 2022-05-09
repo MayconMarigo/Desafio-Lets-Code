@@ -1,5 +1,3 @@
-# README
-
 # Sobre o desafio
 
 * Desenvolver um quadro kanban com as colunas "To Do", "Doing" e "Done" onde pudesse ser feito adição, remoção e alteração de tarefas e alteração de status das tarefas já adicionadas. 
