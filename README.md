@@ -1,4 +1,23 @@
 # README
+# Sumário
+
+## Rodar os projetos com Docker
+* <a href="#docker"> Docker </a><br/>
+
+## Requisitos Funcionais
+
+* <a href="#add-task"> Adicionar tarefas </a><br/>
+* <a href="#remove-task"> Remover tarefas </a><br/>
+* <a href="#update-task"> Atualizar tarefas </a><br/>
+* <a href="#update-task-status"> Atualizar status das tarefas </a><br/>
+
+## Requisitos Não Funcionais
+
+* <a href="#nfr">Requisitos Não Funcionais</a>
+
+## Tecnologias utilizadas
+
+* <a href="#tech">Tecnologias</a>
 
 # Rodando os projetos separados
 * Clonar o repositório ```https://github.com/MayconMarigo/desafio-lets-code.git```.
@@ -12,6 +31,8 @@
 * Rode o comando ```npm start``` para iniciar o front.
 * O navegador abrirá automaticamente na url ```http://localhost:3000``` onde a página estará disponível.
 
+<div id="docker"></div>
+
 ## Com Docker
 
 * Clonar o repositório ```https://github.com/MayconMarigo/desafio-lets-code.git```.
@@ -20,7 +41,10 @@
 
 # Funcionalidades - REQUISITOS FUNCIONAIS
 
+<div id="add-task"></div>
+
 ## Adicionar tarefa
+
 * Ao clicar no botão com o símbolo "+" no canto inferior direito da tela abrirá uma modal solicitando as informações para adicionar a nova tarefa.
 
 BOTÃO:
@@ -32,6 +56,8 @@ MODAL:
 ![image](https://user-images.githubusercontent.com/67290959/167440603-67a2cbae-ff4d-4beb-b048-be10e387367f.png)
 
 * É necessário preencher ambos os campos e então clicar no símbolo de confirmação no canto inferior direito da modal.
+
+<div id="remove-task"></div>
 
 ## Remover tarefa
 * Ao passar o mouse em cima de qualquer card de tarefa será liberado no canto esquerdo inferior um botão com símbolo de uma lixeira, basta clicar para excluir a tarefa desejada.
@@ -45,6 +71,8 @@ CARD:
 MENSAGEM:
 
 ![image](https://user-images.githubusercontent.com/67290959/167441134-bf29eb8f-9a96-4685-80a0-033487691c3c.png)
+
+<div id="update-task"></div>
 
 ## Atualizar Tarefa
 * Ao passar o mouse em cima de qualquer card de tarefa será liberado no canto direito inferior um botão com símbolo de uma caneta, basta clicar para editar a tarefa desejada.
@@ -61,6 +89,8 @@ CARD EDITÁVEL:
 
 * É necessário preencher ambos os campos e então clicar no símbolo de confirmação no canto inferior direito do card para gravar a alteração.
 
+<div id="update-task-status"></div>
+
 ## Alterar status
 * Poderá ser alterado o status de uma tarefa das seguintes formas:
     * de "To Do" para "Doing".
@@ -69,6 +99,8 @@ CARD EDITÁVEL:
 * Para realizar a alteração basta clicar nos botões correspondentes em cada um dos cards conforme representação das setas abaixo:
 
 ![image](https://user-images.githubusercontent.com/67290959/167442205-b9877368-b8be-4414-a8f0-3d52daf02ad9.png)
+
+<div id="nfr"></div>
 
 # Funcionalidades - REQUISITOS NÃO FUNCIONAIS
 
@@ -105,6 +137,8 @@ adicionado escrevendo:
 setInterval(() => {console.log("oi lets code"}, 5000)
 ~~~
 ```
+
+<div id="tech"></div>
 
 ## Tecnologias
 
