@@ -41,14 +41,14 @@
 <div id="back"></div>
 
 ## Backend
-* Da pasta ```root``` do projeto rode no terminal ou na IDE ```cd back```
+* Na pasta ```root``` do projeto rode no terminal ou na IDE ```cd back```
 * Rode o comando ```npm install```
 * Rode o comando ```npm run server``` para iniciar o backend.
 
 <div id="front"></div>
 
 ## Frontend
-* Da pasta ```root``` do projeto rode no terminal ou na IDE ```cd front```
+* Na pasta ```root``` do projeto rode no terminal ou na IDE ```cd front```
 * Rode o comando ```npm install```
 * Rode o comando ```npm start``` para iniciar o frontend.
 * O navegador abrirá automaticamente na url ```http://localhost:3000``` onde a página estará disponível.
@@ -69,7 +69,7 @@
 
 ## Adicionar tarefa
 
-* Ao clicar no botão com o símbolo "+" no canto inferior direito da tela abrirá uma modal solicitando as informações para adicionar a nova tarefa.
+* Ao clicar no botão com o símbolo "+" no canto inferior direito da tela abrirá uma modal solicitando as informações para adicionar uma nova tarefa.
 
 BOTÃO:
 
@@ -117,9 +117,9 @@ CARD EDITÁVEL:
 
 ## Alterar status
 * Poderá ser alterado o status de uma tarefa das seguintes formas:
-    * de "To Do" para "Doing".
-    * de "Doing" para "To Do" ou "Doing" para "Done"
-    * de "Done" para "Doing"
+    * "To Do" para "Doing".
+    * "Doing" para "To Do" ou "Doing" para "Done"
+    * "Done" para "Doing"
 * Para realizar a alteração basta clicar nos botões correspondentes em cada um dos cards conforme representação das setas abaixo:
 
 ![image](https://user-images.githubusercontent.com/67290959/167442205-b9877368-b8be-4414-a8f0-3d52daf02ad9.png)
@@ -158,13 +158,13 @@ COLUNAS:
 
 EXEMPLO MARKDOWN CÓDIGO JS:
 
-![image](https://user-images.githubusercontent.com/67290959/167445449-ec68a6a3-2521-427e-ab13-a445d582af35.png)
+![image](https://user-images.githubusercontent.com/67290959/167471027-f448d4e6-59df-4af3-8eec-edee939fc741.png)
 
 adicionado escrevendo:
 
 ```
 ~~~js
-setInterval(() => {console.log("oi lets code"}, 5000)
+setInterval(() => {console.log("oi lets code"), 5000)
 ~~~
 ```
 
