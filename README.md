@@ -1,200 +1,117 @@
-# Desafio Técnico - Frontend
+# README
 
-O propósito desse desafio é a criação de frontend para um quadro de kanban. Esse quadro possui listas, que contém cards.
+# Rodando os projetos separados
+* Clonar o repositório ```https://github.com/MayconMarigo/desafio-lets-code.git```.
 
-As imagens abaixo são apenas uma ilustração da funcionalidade desejada:
+## Backend
+* Da pasta ```root``` do projeto rode ```cd back```
+* Rode o comando ```npm run server``` para iniciar o backend.
 
-![](https://s3-sa-east-1.amazonaws.com/lcpi/62b90509-8792-4fb1-9aa7-240f5a22c88e.png)
+## Frontend
+* Da pasta ```root``` do projeto rode ```cd front```
+* Rode o comando ```npm start``` para iniciar o front.
+* O navegador abrirá automaticamente na url ```http://localhost:3000``` onde a página estará disponível.
 
-Com os dois primeiros cards em modo de edição:
+## Com Docker
 
-![](https://s3-sa-east-1.amazonaws.com/lcpi/64875968-b03c-49b7-9c28-4d82b73e7d51.png)
+* Clonar o repositório ```https://github.com/MayconMarigo/desafio-lets-code.git```.
+* Rodar o comando no gitbash ```docker-compose up```
+* Após a inicialização dos containers basta navegar para a url: ```http://localhost:3000``` que a página estará disponível.
 
-Esse é um protótipo bem qualquer nota, sem estilo, nem considerações de UI e UX. 
+# Funcionalidades - REQUISITOS FUNCIONAIS
 
-Esperamos uma qualidade bem mais alta de seu trabalho.
+## Adicionar tarefa
+* Ao clicar no botão com o símbolo "+" no canto inferior direito da tela abrirá uma modal solicitando as informações para adicionar a nova tarefa.
 
-## Rodando a API
+BOTÃO:
 
-Uma API de exemplo foi disponibilizada na pasta BACK.
+![image](https://user-images.githubusercontent.com/67290959/167441290-f3ce2171-4543-4b65-ab4d-049fe917d47f.png)
 
-Para rodá-la, faça:
+MODAL:
 
-```console
-> cd BACK
-> npm install
-> npm run server
-```
+![image](https://user-images.githubusercontent.com/67290959/167440603-67a2cbae-ff4d-4beb-b048-be10e387367f.png)
 
-Ela responderá na porta 5000.
+* É necessário preencher ambos os campos e então clicar no símbolo de confirmação no canto inferior direito da modal.
 
-## Desafio
+## Remover tarefa
+* Ao passar o mouse em cima de qualquer card de tarefa será liberado no canto esquerdo inferior um botão com símbolo de uma lixeira, basta clicar para excluir a tarefa desejada.
 
-Você precisa criar um frontend de acordo com os requisitos abaixo, que deve ser desenvolvido na pasta "FRONT".
+CARD: 
 
-Para criar seu frontend você pode escolher entre duas tecnologias:
+![image](https://user-images.githubusercontent.com/67290959/167442875-a65938df-da45-4ce9-bf01-a18a46472c63.png)
 
-1. Javascript ou Typescript + REACT
-2. Typescript + ANGULAR
+* Se a exclusão for feita com sucesso será exibido uma mensagem de confirmação no canto superior direito da tela
 
-## Requisitos
+MENSAGEM:
 
-**Utilização da API**
+![image](https://user-images.githubusercontent.com/67290959/167441134-bf29eb8f-9a96-4685-80a0-033487691c3c.png)
 
-A API que provemos nesse projeto utiliza JWT para autenticação, você deve fazer a seguinte requisição antes qualquer outra:
+## Atualizar Tarefa
+* Ao passar o mouse em cima de qualquer card de tarefa será liberado no canto direito inferior um botão com símbolo de uma caneta, basta clicar para editar a tarefa desejada.
 
-```
-(POST) http://0.0.0.0:5000/login/
+CARD:
 
-{ "login":"letscode", "senha":"lets@123"}
-```
+![image](https://user-images.githubusercontent.com/67290959/167442569-81f27002-5d79-47a3-be6a-28b23c914316.png)
 
-Feita a requisição você receberá um token em formato json. Esse token deve ser enviado em todas as requisições subsequentes pelo header Authorization de acordo com o padrão JWT.
+* O card entra em modo de edição e permite que os campos sejam alterados
 
-```
-Authorization : 'Bearer <token>'
-```
+CARD EDITÁVEL:
 
-Lembre-se de setar os headers Accept e ContentType para json em todas as requisições...
+![image](https://user-images.githubusercontent.com/67290959/167443137-c7401b68-7461-4a08-9227-87d203353963.png)
 
----
+* É necessário preencher ambos os campos e então clicar no símbolo de confirmação no canto inferior direito do card para gravar a alteração.
 
-A API tem os seguintes entrypoints:
+## Alterar status
+* Poderá ser alterado o status de uma tarefa das seguintes formas:
+    * de "To Do" para "Doing".
+    * de "Doing" para "To Do" ou "Doing" para "Done"
+    * de "Done" para "Doing"
+* Para realizar a alteração basta clicar nos botões correspondentes em cada um dos cards conforme representação das setas abaixo:
 
-```
-(GET)       http://0.0.0.0:5000/cards/
-(POST)      http://0.0.0.0:5000/cards/
-(PUT)       http://0.0.0.0:5000/cards/{id}
-(DELETE)    http://0.0.0.0:5000/cards/{id}
-```
+![image](https://user-images.githubusercontent.com/67290959/167442205-b9877368-b8be-4414-a8f0-3d52daf02ad9.png)
 
----
+# Funcionalidades - REQUISITOS NÃO FUNCIONAIS
 
-**GET** obtém uma lista de cards.
+## Cada uma das colunas poderão ser recolhidas caso seja clicado em qualquer lugar do header da coluna:
 
-A API retorna um array com o seguinte formato:
+COLUNA ABERTA (DEFAULT) : 
 
-```
-[
-    {
-        id:uuid
-        titulo : string, 
-        conteudo: string, 
-        lista: string
-    },
-    ...
-]
-```
+![image](https://user-images.githubusercontent.com/67290959/167444058-37468beb-e3a3-47f1-b3f8-44903b6e76c8.png)
 
----
+COLUNA RECOLHIDA:
 
-**POST** adiciona um novo card, passe-o pelo corpo da requisição com o seguinte formato:
+![image](https://user-images.githubusercontent.com/67290959/167444130-30d0c603-a560-4ba3-8528-6f06edfa70b5.png)
 
-```
-{
-    titulo : string, 
-    conteudo: string, 
-    lista: string
-}
-```
+## Contador de tarefas
 
-A api retornará o card completo como o id atribuído.
+* Automaticamente ao adicionar, remover ou alterar o status de uma tarefa existe um contador para saber o número de tarefas em cada uma das colunas:
 
----
+COLUNAS:
 
-**PUT** altera um card existente, passe o id na URL e o card completo pelo corpo da requisição de acordo com o formato:
+![image](https://user-images.githubusercontent.com/67290959/167444603-f89f1987-f317-4995-b8f4-0d18604b65a2.png)
+
+## Markdown
+
+* Ao adicionar ou alterar uma tarefa poderá ser utilizado padrões de markdown que serão disponibilizados dentro do card:
+
+EXEMPLO MARKDOWN CÓDIGO JS:
+
+![image](https://user-images.githubusercontent.com/67290959/167445449-ec68a6a3-2521-427e-ab13-a445d582af35.png)
+
+adicionado escrevendo:
 
 ```
-{
-    id: uuid (o mesmo passado na URL)
-    titulo : string, 
-    conteudo: string, 
-    lista: string
-}
+~~~js
+setInterval(() => {console.log("oi lets code"}, 5000)
+~~~
 ```
 
-A api retornará o card completo que foi salvo.
+## Tecnologias
 
----
+* React Js
+    * MaterialUI / MaterialUI Icons
+    * React Hooks
+    * Context
+* Node Js
+    * Express
 
-**DELETE** remove um card existente, passe o id na URL.
-
-A api retornará a lista dos cards que sobraram (igual ao GET).
-
-```
-[
-    {
-        id:uuid
-        titulo : string, 
-        conteudo: string, 
-        lista: string
-    },
-    ...
-]
-```
-
----
-
-**Atenção**: As rotas tem validações e retornos diferentes dependendo do resultado:
-
-> POST e PUT retornam 400 se titulo, conteudo ou lista forem avaliados como falsy.
-> 
-> PUT também retorna 400 se o id passado na URL não for igual ao do objeto passado no corpo da requisição.
-> 
-> PUT e DELETE retornam 404 se não encontrarem um card com o id passado na URL.
-> 
-> Todas as rotas retornam 401 se o token não for passado, for inválido, mal-formado ou expirado.
-
-## Requisitos
-
-1. A API que provemos deve ser usada para persistência dos cards (ela trabalha com persistência em memória) e não deve ser alterada.
-
-2. A interface gráfica será apenas uma tela, nela deve haver três colunas chamadas "To do", "Doing" e "Done". 
-
-3. Os cards deve ser listados nessas colunas de acordo com o valor do campo `lista` presente no card. Os valores de `lista` devem ser "ToDo", "Doing" e "Done", respectivamente. 
-
-4. Deve haver um local que permita criar um card passando valores para o `titulo` e `conteudo`, deve haver um botão para adicionar o card. 
-
-5. Um novo card deve sempre cair na lista "To Do" após persistido na API.
-
-6. O card deverá ter dois modos: Visualização e Edição.
-
-7. No modo de visualização o card terá um cabeçalho com seu título, o conteúdo e 4 botões.
-
-8. O `conteudo` do card pode ser markdown, utilize uma biblioteca para renderizá-lo no modo de visualização (recomendamos uma combinação de `dompurify` e `marked`). Lembre-se de estilizar o html resultante do parse do markdown... [Se quiser usar highlight para campos de código no markdown será um diferencial].
-
-9.  Um dos botões do card deverá excluí-lo (persistindo pela API), outro colocá-lo em modo de edição.
-
-10. Os dois outros botões devem mudar o card para a lista anterior (se houver) ou para a lista seguinte (se houver). A decisão de desabilitar, esconder ou apenas não gerar o evento desses botões quando não houver a proxima lista ou a anterior é sua.
-
-11. No modo de edição, o card conterá um input para o `titulo`, um textarea para o `conteudo` e dois botões.
-
-12. No modo de edição, um dos botões cancela a edição, quando precionado os campos devem ser resetados para o valor atual e voltar o card ao modo de visualização.
-
-13. O outro botão salva o card, persistindo as informações pela API. Também volta ao modo de visualização em seguida.
-
-14. Toda decisão de visual, de UI e UX é sua. Apenas utilize uma única tela. 
-
-15. Se estiver usando REACT priorize componentes funcionais e hooks.
-
-16. O projeto deve ser colocado em um repositório GITHUB ou equivalente, estar público, e conter um readme.md que explique em detalhes qualquer comando ou configuração necessária para fazer o projeto rodar.
-
-17. A entrega será apenas a URL para clonarmos o repositório.
-
-## Diferenciais e critérios de avaliação
-
-Qualidade visual levando em conta práticas de UI e UX será considerado um diferencial. Bem como a instalação e bom uso de bibliotecas como styled-components e react-icons ou seus equivalentes para Angular se aplicável.
-
-Arquiteturas que separem responsabilidades, de baixo acoplamento e alta-coesão são preferíveis, sobretudo usando dependências injetadas, que permitam maior facilidade para testes unitários e de integração.
-
-Avaliaremos se o código é limpo (com boa nomenclatura de classes, variáveis, métodos e funções) e dividido em arquivos bem nomeados, de forma coesa e de acordo com boas práticas. Bem como práticas básicas como tratamento de erros.
-
-Desacoplar e testar os componentes e serviços com testes unitários será considerado um diferencial.
-
-O uso de typescript (se não for obrigatório) acompanhado das devidas configurações e tipagens bem feitas, bem como uso de técnicas de abstração usando interfaces (especialmente da lógica de persistência) serão consideradas um deferencial.
-
-O uso de Linter será considerado um diferencial.
-
-A criação de um docker-compose e de dockerfiles que ao rodar `docker-compose up` subam o sistema por completo (front e back) será considerado um diferencial.
-
-Entregou incompleto, teve dificuldade com algo, ou fez algo meio esquisito para simplificar alguma coisa que não estava conseguindo fazer? Deixe uma observação com a justificativa no readme.md para nós...
