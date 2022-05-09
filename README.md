@@ -72,7 +72,7 @@ CARD EDITÁVEL:
 
 # Funcionalidades - REQUISITOS NÃO FUNCIONAIS
 
-## Cada uma das colunas poderão ser recolhidas caso seja clicado em qualquer lugar do header da coluna:
+## Cada uma das colunas poderá ser recolhida caso seja clicado em qualquer lugar do header da mesma:
 
 COLUNA ABERTA (DEFAULT) : 
 
