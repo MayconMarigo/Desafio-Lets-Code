@@ -32,16 +32,16 @@
 <div id="back"></div>
 
 ## Backend
-* Da pasta ```root``` do projeto rode ```cd back```
+* Da pasta ```root``` do projeto rode no terminal ou na IDE ```cd back```
 * Rode o comando ```npm install```
 * Rode o comando ```npm run server``` para iniciar o backend.
 
 <div id="front"></div>
 
 ## Frontend
-* Da pasta ```root``` do projeto rode ```cd front```
+* Da pasta ```root``` do projeto rode no terminal ou na IDE ```cd front```
 * Rode o comando ```npm install```
-* Rode o comando ```npm start``` para iniciar o front.
+* Rode o comando ```npm start``` para iniciar o frontend.
 * O navegador abrirá automaticamente na url ```http://localhost:3000``` onde a página estará disponível.
 
 <div id="docker"></div>
