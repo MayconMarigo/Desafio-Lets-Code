@@ -1,0 +1,113 @@
+.container{
+  padding: 40px;
+  background-color: #ECECEC;
+  min-height: 100vh;
+  height: 100%;
+}
+.modal-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 400px;
+  background-color: #fffef0;
+  border: 2px solid #000;
+  box-shadow: 0px 0px 50px 1px #ffffffbb;
+  padding: 10px;
+}
+.modal-header{
+font-size: 1.2vw !important;
+  font-weight: 600 !important;
+  color: rgb(27, 27, 27);
+  transition: 0.3s !important;
+}
+.modal-textarea{
+  margin-top: 20px !important;
+    padding: 8px 0 0 8px;
+}
+.alert{
+  position: fixed;
+  z-index: 1;
+  right: 3%;
+}
+.error{
+  margin-top: 10px;
+  text-align: center;
+}
+.error span{
+  font-weight: 600 !important;
+  color: red
+}
+.add-task{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 1 !important;
+}
+.add-button{
+  background-color: rgb(22, 83, 212) !important;
+  padding: 10px 0 !important;
+  border-radius: 100% !important;
+  color: white !important;
+}
+.add-button:hover{
+    background-color: rgb(36, 105, 255) !important;
+}
+.accordion-container{
+  padding: 10px 20px;
+  flex-grow: 1;
+  max-width: 33% !important;
+  border-radius: 15px;
+}
+.accordion-container:hover{
+  background-color: rgba(65, 63, 63, 0.041);
+}
+.accordion-header{
+  font-size: 25px !important;
+}
+.accordion-details{
+  padding-top: 15px !important;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid gray;
+}
+.ToDo-header,
+.Doing-header,
+.Done-header {
+  border-bottom: 2px solid rgba(27, 27, 27, 0.562) !important;
+}
+
+.ToDo-header{
+  border-top: 4px solid #FFD4D4 !important ;
+}
+
+.Doing-header{
+  border-top: 4px solid #F4FD70 !important;
+}
+
+.Done-header{
+  border-top: 4px solid #6AE075 !important;
+}
+
+@media screen and (max-width: 1032px) {
+  .container{
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .add-task{
+    text-align: center !important;
+    right: 0 !important;
+    width: 100% !important;
+  }
+  .accordion-container {
+      width: 100% !important;
+      max-width: none !important;
+    }
+  .accordion-details-text{
+    font-size: 2vw !important;
+  }
+  .modal-header {
+      font-size: 2vw !important;
+  }
+}

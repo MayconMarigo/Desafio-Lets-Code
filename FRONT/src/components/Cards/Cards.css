@@ -1,0 +1,85 @@
+
+.card-container{
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  transition: 0.3s !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+}
+.card-hoverable{
+  border-top: 1px solid rgba(27, 27, 27, 0.562);
+  width: 100% !important;
+  padding: 13px 15px 0 15px !important;
+  display: none !important;
+}
+.card-container:hover .card-hoverable{
+  display: flex !important;
+}
+.editable{
+  border: 0;
+  display: flex !important;
+}
+.card-icon{
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 100%;
+  transition: 0.3s !important;
+}
+.card-icon:hover{
+  background-color: #ffffff9f !important;
+}
+.card-header, .switch-status{
+  text-align: center;
+  font-size: 1.5vw !important;
+  font-weight: 600 !important;
+  color: rgba(27, 27, 27, 0.699);
+  transition: 0.3s !important;
+}
+.markdown-body{
+  padding: 0 2px;
+  width: 95% !important;
+}
+.markdown-body-editable{
+  padding-left: 18px;
+}
+.TextArea{
+  width: 100% !important;
+  margin: 15px 0;
+  padding: 8px 0 0 8px !important;
+}
+.TextArea:hover{
+  outline: none !important;
+}
+.card-button{
+  border-radius: 50% !important;
+}
+.card-button:hover .switch-status{
+  color: red !important
+}
+.ToDo{
+  background-color: #FFD4D4 !important;
+}
+.ToDo:hover{
+  background-color: #f7c5c5 !important;
+}
+.Doing{
+background-color: #FEFFD4 !important;
+}
+.Doing:hover{
+background-color: #f7f8b7 !important;
+}
+.Done{
+  background-color: #D4FFD9 !important;
+}
+.Done:hover{
+  background-color: #b9fac1 !important;
+}
+
+@media screen and (max-width: 640px) {
+.card-header,
+  .switch-status {
+    font-size: 3vw !important;
+  }
+}
+
