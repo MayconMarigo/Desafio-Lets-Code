@@ -159,6 +159,7 @@ setInterval(() => {console.log("oi lets code"}, 5000)
 
 # Tecnologias
 
+* Docker
 * React Js
     * MaterialUI / MaterialUI Icons
     * React Hooks
