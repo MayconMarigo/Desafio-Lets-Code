@@ -1,6 +1,11 @@
 # README
 # Sumário
 
+## Rodar os projetos separados
+
+* <a href="#back">Backend</a><br/>
+* <a href="#front">Frontend</a><br/>
+
 ## Rodar os projetos com Docker
 * <a href="#docker"> Docker </a><br/>
 
@@ -19,12 +24,18 @@
 
 * <a href="#tech">Tecnologias</a>
 
+-----------------------------------------------------------------------------------
+
 # Rodando os projetos separados
 * Clonar o repositório ```https://github.com/MayconMarigo/desafio-lets-code.git```.
+
+<div id="back"></div>
 
 ## Backend
 * Da pasta ```root``` do projeto rode ```cd back```
 * Rode o comando ```npm run server``` para iniciar o backend.
+
+<div id="front"></div>
 
 ## Frontend
 * Da pasta ```root``` do projeto rode ```cd front```
@@ -38,6 +49,8 @@
 * Clonar o repositório ```https://github.com/MayconMarigo/desafio-lets-code.git```.
 * Rodar o comando no gitbash ```docker-compose up```
 * Após a inicialização dos containers basta navegar para a url: ```http://localhost:3000``` que a página estará disponível.
+
+-----------------------------------------------------------------------------------
 
 # Funcionalidades - REQUISITOS FUNCIONAIS
 
@@ -102,6 +115,8 @@ CARD EDITÁVEL:
 
 <div id="nfr"></div>
 
+-----------------------------------------------------------------------------------
+
 # Funcionalidades - REQUISITOS NÃO FUNCIONAIS
 
 ## Cada uma das colunas poderá ser recolhida caso seja clicado em qualquer lugar do header da mesma:
@@ -140,7 +155,9 @@ setInterval(() => {console.log("oi lets code"}, 5000)
 
 <div id="tech"></div>
 
-## Tecnologias
+-----------------------------------------------------------------------------------
+
+# Tecnologias
 
 * React Js
     * MaterialUI / MaterialUI Icons
