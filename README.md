@@ -58,7 +58,7 @@
 ## Com Docker
 
 * Clonar o repositório ```https://github.com/MayconMarigo/desafio-lets-code.git```.
-* Rodar o comando no gitbash ```docker-compose up```
+* Na pasta ```root``` do projeto rodar o comando no gitbash ```docker-compose up```
 * Após a inicialização dos containers basta navegar para a url: ```http://localhost:3000``` que a página estará disponível.
 
 -----------------------------------------------------------------------------------
